@@ -22,10 +22,10 @@ const Login = () => {
       headers: {
         "Content-Type": "application/json",
       },
-      body: {
+      data: JSON.stringify({
         email: userInput.id,
         password: userInput.pw,
-      },
+      }),
     }).then((res) => {
       localStorage.setItem("token", res.data.access_token);
       navigate("/todo");

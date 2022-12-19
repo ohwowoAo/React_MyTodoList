@@ -41,7 +41,6 @@ const Signup = () => {
     if (cursorId.current) {
       cursorId.current.focus();
     }
-    ``;
   }, []);
 
   return (
